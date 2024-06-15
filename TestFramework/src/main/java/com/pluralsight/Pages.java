@@ -5,4 +5,11 @@ public class Pages {
         HomePage homePage = new HomePage();
         return homePage;
     }
+
+    public static AuthorPages authorPages() {
+        AuthorPages authorPages = new AuthorPages();
+        return authorPages;
+    }
+
+
 }

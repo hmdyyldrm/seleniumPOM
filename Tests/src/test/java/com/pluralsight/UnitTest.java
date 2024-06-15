@@ -7,9 +7,15 @@ import org.junit.jupiter.api.Test;
 public class UnitTest {
 
     @Test
-    void canGoToHomePage() {
+    public void canGoToHomePage() {
         Pages.homePage().goTo();
         Assertions.assertTrue(Pages.homePage().isAt());
+    }
+
+    @Test
+    public void canGoToAuthorPage() {
+        Pages.authorPages().goTo();
+        Assertions.assertTrue(Pages.authorPages().isAt());
     }
 
     @AfterAll
